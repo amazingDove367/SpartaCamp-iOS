@@ -1,1 +1,0 @@
-# SpartaCamp-iOS
