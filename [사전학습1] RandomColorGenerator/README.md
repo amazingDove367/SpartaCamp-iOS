@@ -22,7 +22,7 @@
 <br>
 
 ## 핵심 코드
-- randomly RGB 생성 코드
+- randomly generating RGB
 ```swift
 let randomRed = CGFloat.random(in: 0...1)
 let randomGreen = CGFloat.random(in: 0...1)
@@ -30,11 +30,40 @@ let randomBlue = CGFloat.random(in: 0...1)
 let randomColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
 ```
 
-- Converting CGFloat value to RGB value
+<br>
+
+- Converting CGFloat to RGB
 ```swift
 let redValue = Int(randomRed * 255)
 let greenValue = Int(randomGreen * 255)
 let blueValue = Int(randomBlue * 255)
+```
+
+<br>
+
+- 🔴 Configuration of class SceneDelegate for Programmatically creating UI 🔴
+```swift
+class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+
+    var window: UIWindow?
+
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+        // If using a storyboard⭐️, the `window` property will automatically be initialized⭐️ and attached⭐️ to the scene.
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        // willconnectTo() : 사용자가 앱을 처음 시작할 때, 앱의 첫 화면을 설정하는 코드
+
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let window = UIWindow(windowScene: windowScene)
+        let vc = RandomColorViewController() // 첫 화면의 viewcontroller file name
+        window.rootViewController = vc
+        self.window = window
+        window.makeKeyAndVisible()
+    }
+
+    ...
+}
 ```
 
 
