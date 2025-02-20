@@ -77,7 +77,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 (click the image to read the article)
 
 <a href="https://hortenssiaa.tistory.com/73">
-    <img width="680" alt="blogsite" src="https://github.com/user-attachments/assets/10940b88-4087-40d9-8da4-dda1c49fc6dc">
+    <img width="680" alt="blogsite" src="https://github.com/user-attachments/assets/a7d1fcef-ff0c-4add-953c-56b59e1335a6">
 </a>
 
 <br>
