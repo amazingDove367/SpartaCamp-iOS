@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  [mini#2] CounterApp
+//  [mini#3] MenoApp
 //
 //  Created by King Jesus on 2/26/25.
 //
