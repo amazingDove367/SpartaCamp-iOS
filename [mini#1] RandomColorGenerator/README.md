@@ -41,7 +41,7 @@ let blueValue = Int(randomBlue * 255)
 - 🔴 Configuration of class SceneDelegate for Programmatically creating UI 🔴
     > 1. delete storyboard file : Main.storyboard > Delete (Move to Trash)
     
-    > 2. delete storyboard file in info.plist : RandomColorGenerator (project name) > TARGETS > RandomColorGenerator > Build Settings > search "into.plist" > Delete "UIKit Main Storyboard File Base Name"
+    > 2. delete storyboard file in info.plist : RandomColorGenerator (project name) > TARGETS > RandomColorGenerator > Build Settings > search "info.plist" > Delete "UIKit Main Storyboard File Base Name"
   
     > 3. delete storyboard name in Info.plist : RandomColorGenerator (project name) > folder "RandomColorGenerator" > file "Info.plist" > Infomation Property List > ... > delete "Storyboard Name"
     
