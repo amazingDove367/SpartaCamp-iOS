@@ -7,44 +7,75 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		B33144BE2D6EFA8D009C178F /* PBXContainerItemProxy */ = {
+		B353EF182D7037CF008BDF96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B331449F2D6EFA8A009C178F /* Project object */;
+			containerPortal = B353EEF92D7037CD008BDF96 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B33144A62D6EFA8A009C178F;
-			remoteInfo = "[mini#3] MenoApp";
+			remoteGlobalIDString = B353EF002D7037CD008BDF96;
+			remoteInfo = "[mini#3] MemoApp";
 		};
-		B33144C82D6EFA8D009C178F /* PBXContainerItemProxy */ = {
+		B353EF222D7037CF008BDF96 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B331449F2D6EFA8A009C178F /* Project object */;
+			containerPortal = B353EEF92D7037CD008BDF96 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B33144A62D6EFA8A009C178F;
-			remoteInfo = "[mini#3] MenoApp";
+			remoteGlobalIDString = B353EF002D7037CD008BDF96;
+			remoteInfo = "[mini#3] MemoApp";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B34AC1922D70355500C9CA82 /* [mini#3] MenoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[mini#3] MenoApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B34AC1932D70355500C9CA82 /* [mini#3] MenoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[mini#3] MenoAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B34AC1942D70355500C9CA82 /* [mini#3] MenoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[mini#3] MenoAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B353EF012D7037CD008BDF96 /* [mini#3] MemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "[mini#3] MemoApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B353EF172D7037CF008BDF96 /* [mini#3] MemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[mini#3] MemoAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B353EF212D7037CF008BDF96 /* [mini#3] MemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "[mini#3] MemoAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B353EF292D7037CF008BDF96 /* Exceptions for "[mini#3] MemoApp" folder in "[mini#3] MemoApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = B353EF002D7037CD008BDF96 /* [mini#3] MemoApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B353EF032D7037CD008BDF96 /* [mini#3] MemoApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B353EF292D7037CF008BDF96 /* Exceptions for "[mini#3] MemoApp" folder in "[mini#3] MemoApp" target */,
+			);
+			path = "[mini#3] MemoApp";
+			sourceTree = "<group>";
+		};
+		B353EF1A2D7037CF008BDF96 /* [mini#3] MemoAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "[mini#3] MemoAppTests";
+			sourceTree = "<group>";
+		};
+		B353EF242D7037CF008BDF96 /* [mini#3] MemoAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "[mini#3] MemoAppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		B33144A42D6EFA8A009C178F /* Frameworks */ = {
+		B353EEFE2D7037CD008BDF96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B33144BA2D6EFA8D009C178F /* Frameworks */ = {
+		B353EF142D7037CF008BDF96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B33144C42D6EFA8D009C178F /* Frameworks */ = {
+		B353EF1E2D7037CF008BDF96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,137 +85,157 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B331449E2D6EFA8A009C178F = {
+		B353EEF82D7037CD008BDF96 = {
 			isa = PBXGroup;
 			children = (
-				B34AC1922D70355500C9CA82 /* [mini#3] MenoApp.app */,
-				B34AC1932D70355500C9CA82 /* [mini#3] MenoAppTests.xctest */,
-				B34AC1942D70355500C9CA82 /* [mini#3] MenoAppUITests.xctest */,
+				B353EF032D7037CD008BDF96 /* [mini#3] MemoApp */,
+				B353EF1A2D7037CF008BDF96 /* [mini#3] MemoAppTests */,
+				B353EF242D7037CF008BDF96 /* [mini#3] MemoAppUITests */,
+				B353EF022D7037CD008BDF96 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		B353EF022D7037CD008BDF96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B353EF012D7037CD008BDF96 /* [mini#3] MemoApp.app */,
+				B353EF172D7037CF008BDF96 /* [mini#3] MemoAppTests.xctest */,
+				B353EF212D7037CF008BDF96 /* [mini#3] MemoAppUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B33144A62D6EFA8A009C178F /* [mini#3] MenoApp */ = {
+		B353EF002D7037CD008BDF96 /* [mini#3] MemoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B33144D02D6EFA8D009C178F /* Build configuration list for PBXNativeTarget "[mini#3] MenoApp" */;
+			buildConfigurationList = B353EF2A2D7037CF008BDF96 /* Build configuration list for PBXNativeTarget "[mini#3] MemoApp" */;
 			buildPhases = (
-				B33144A32D6EFA8A009C178F /* Sources */,
-				B33144A42D6EFA8A009C178F /* Frameworks */,
-				B33144A52D6EFA8A009C178F /* Resources */,
+				B353EEFD2D7037CD008BDF96 /* Sources */,
+				B353EEFE2D7037CD008BDF96 /* Frameworks */,
+				B353EEFF2D7037CD008BDF96 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "[mini#3] MenoApp";
+			fileSystemSynchronizedGroups = (
+				B353EF032D7037CD008BDF96 /* [mini#3] MemoApp */,
+			);
+			name = "[mini#3] MemoApp";
 			packageProductDependencies = (
 			);
-			productName = "[mini#3] MenoApp";
-			productReference = B34AC1922D70355500C9CA82 /* [mini#3] MenoApp.app */;
+			productName = "[mini#3] MemoApp";
+			productReference = B353EF012D7037CD008BDF96 /* [mini#3] MemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B33144BC2D6EFA8D009C178F /* [mini#3] MenoAppTests */ = {
+		B353EF162D7037CF008BDF96 /* [mini#3] MemoAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B33144D52D6EFA8D009C178F /* Build configuration list for PBXNativeTarget "[mini#3] MenoAppTests" */;
+			buildConfigurationList = B353EF2F2D7037CF008BDF96 /* Build configuration list for PBXNativeTarget "[mini#3] MemoAppTests" */;
 			buildPhases = (
-				B33144B92D6EFA8D009C178F /* Sources */,
-				B33144BA2D6EFA8D009C178F /* Frameworks */,
-				B33144BB2D6EFA8D009C178F /* Resources */,
+				B353EF132D7037CF008BDF96 /* Sources */,
+				B353EF142D7037CF008BDF96 /* Frameworks */,
+				B353EF152D7037CF008BDF96 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B33144BF2D6EFA8D009C178F /* PBXTargetDependency */,
+				B353EF192D7037CF008BDF96 /* PBXTargetDependency */,
 			);
-			name = "[mini#3] MenoAppTests";
+			fileSystemSynchronizedGroups = (
+				B353EF1A2D7037CF008BDF96 /* [mini#3] MemoAppTests */,
+			);
+			name = "[mini#3] MemoAppTests";
 			packageProductDependencies = (
 			);
-			productName = "[mini#3] MenoAppTests";
-			productReference = B34AC1932D70355500C9CA82 /* [mini#3] MenoAppTests.xctest */;
+			productName = "[mini#3] MemoAppTests";
+			productReference = B353EF172D7037CF008BDF96 /* [mini#3] MemoAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B33144C62D6EFA8D009C178F /* [mini#3] MenoAppUITests */ = {
+		B353EF202D7037CF008BDF96 /* [mini#3] MemoAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B33144D82D6EFA8D009C178F /* Build configuration list for PBXNativeTarget "[mini#3] MenoAppUITests" */;
+			buildConfigurationList = B353EF322D7037CF008BDF96 /* Build configuration list for PBXNativeTarget "[mini#3] MemoAppUITests" */;
 			buildPhases = (
-				B33144C32D6EFA8D009C178F /* Sources */,
-				B33144C42D6EFA8D009C178F /* Frameworks */,
-				B33144C52D6EFA8D009C178F /* Resources */,
+				B353EF1D2D7037CF008BDF96 /* Sources */,
+				B353EF1E2D7037CF008BDF96 /* Frameworks */,
+				B353EF1F2D7037CF008BDF96 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B33144C92D6EFA8D009C178F /* PBXTargetDependency */,
+				B353EF232D7037CF008BDF96 /* PBXTargetDependency */,
 			);
-			name = "[mini#3] MenoAppUITests";
+			fileSystemSynchronizedGroups = (
+				B353EF242D7037CF008BDF96 /* [mini#3] MemoAppUITests */,
+			);
+			name = "[mini#3] MemoAppUITests";
 			packageProductDependencies = (
 			);
-			productName = "[mini#3] MenoAppUITests";
-			productReference = B34AC1942D70355500C9CA82 /* [mini#3] MenoAppUITests.xctest */;
+			productName = "[mini#3] MemoAppUITests";
+			productReference = B353EF212D7037CF008BDF96 /* [mini#3] MemoAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B331449F2D6EFA8A009C178F /* Project object */ = {
+		B353EEF92D7037CD008BDF96 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					B33144A62D6EFA8A009C178F = {
+					B353EF002D7037CD008BDF96 = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					B33144BC2D6EFA8D009C178F = {
+					B353EF162D7037CF008BDF96 = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = B33144A62D6EFA8A009C178F;
+						TestTargetID = B353EF002D7037CD008BDF96;
 					};
-					B33144C62D6EFA8D009C178F = {
+					B353EF202D7037CF008BDF96 = {
 						CreatedOnToolsVersion = 16.2;
-						TestTargetID = B33144A62D6EFA8A009C178F;
+						TestTargetID = B353EF002D7037CD008BDF96;
 					};
 				};
 			};
-			buildConfigurationList = B33144A22D6EFA8A009C178F /* Build configuration list for PBXProject "[mini#3] MenoApp" */;
+			buildConfigurationList = B353EEFC2D7037CD008BDF96 /* Build configuration list for PBXProject "[mini#3] MemoApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = B331449E2D6EFA8A009C178F;
+			mainGroup = B353EEF82D7037CD008BDF96;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = B331449E2D6EFA8A009C178F;
+			productRefGroup = B353EF022D7037CD008BDF96 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B33144A62D6EFA8A009C178F /* [mini#3] MenoApp */,
-				B33144BC2D6EFA8D009C178F /* [mini#3] MenoAppTests */,
-				B33144C62D6EFA8D009C178F /* [mini#3] MenoAppUITests */,
+				B353EF002D7037CD008BDF96 /* [mini#3] MemoApp */,
+				B353EF162D7037CF008BDF96 /* [mini#3] MemoAppTests */,
+				B353EF202D7037CF008BDF96 /* [mini#3] MemoAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B33144A52D6EFA8A009C178F /* Resources */ = {
+		B353EEFF2D7037CD008BDF96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B33144BB2D6EFA8D009C178F /* Resources */ = {
+		B353EF152D7037CF008BDF96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B33144C52D6EFA8D009C178F /* Resources */ = {
+		B353EF1F2D7037CF008BDF96 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -194,21 +245,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B33144A32D6EFA8A009C178F /* Sources */ = {
+		B353EEFD2D7037CD008BDF96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B33144B92D6EFA8D009C178F /* Sources */ = {
+		B353EF132D7037CF008BDF96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B33144C32D6EFA8D009C178F /* Sources */ = {
+		B353EF1D2D7037CF008BDF96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -218,20 +269,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B33144BF2D6EFA8D009C178F /* PBXTargetDependency */ = {
+		B353EF192D7037CF008BDF96 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B33144A62D6EFA8A009C178F /* [mini#3] MenoApp */;
-			targetProxy = B33144BE2D6EFA8D009C178F /* PBXContainerItemProxy */;
+			target = B353EF002D7037CD008BDF96 /* [mini#3] MemoApp */;
+			targetProxy = B353EF182D7037CF008BDF96 /* PBXContainerItemProxy */;
 		};
-		B33144C92D6EFA8D009C178F /* PBXTargetDependency */ = {
+		B353EF232D7037CF008BDF96 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B33144A62D6EFA8A009C178F /* [mini#3] MenoApp */;
-			targetProxy = B33144C82D6EFA8D009C178F /* PBXContainerItemProxy */;
+			target = B353EF002D7037CD008BDF96 /* [mini#3] MemoApp */;
+			targetProxy = B353EF222D7037CF008BDF96 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		B33144D12D6EFA8D009C178F /* Debug */ = {
+		B353EF2B2D7037CF008BDF96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -240,9 +291,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4F4VQHPY5W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "[mini#3] MenoApp/Info.plist";
+				INFOPLIST_FILE = "[mini#3] MemoApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -250,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MenoApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MemoApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -258,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		B33144D22D6EFA8D009C178F /* Release */ = {
+		B353EF2C2D7037CF008BDF96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -267,9 +319,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4F4VQHPY5W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "[mini#3] MenoApp/Info.plist";
+				INFOPLIST_FILE = "[mini#3] MemoApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -277,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MenoApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MemoApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -285,7 +338,7 @@
 			};
 			name = Release;
 		};
-		B33144D32D6EFA8D009C178F /* Debug */ = {
+		B353EF2D2D7037CF008BDF96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -348,7 +401,7 @@
 			};
 			name = Debug;
 		};
-		B33144D42D6EFA8D009C178F /* Release */ = {
+		B353EF2E2D7037CF008BDF96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -404,7 +457,7 @@
 			};
 			name = Release;
 		};
-		B33144D62D6EFA8D009C178F /* Debug */ = {
+		B353EF302D7037CF008BDF96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -414,16 +467,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MenoAppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MemoAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[mini#3] MenoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/[mini#3] MenoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[mini#3] MemoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/[mini#3] MemoApp";
 			};
 			name = Debug;
 		};
-		B33144D72D6EFA8D009C178F /* Release */ = {
+		B353EF312D7037CF008BDF96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -433,16 +486,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MenoAppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MemoAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[mini#3] MenoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/[mini#3] MenoApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/[mini#3] MemoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/[mini#3] MemoApp";
 			};
 			name = Release;
 		};
-		B33144D92D6EFA8D009C178F /* Debug */ = {
+		B353EF332D7037CF008BDF96 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -450,16 +503,16 @@
 				DEVELOPMENT_TEAM = 4F4VQHPY5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MenoAppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MemoAppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "[mini#3] MenoApp";
+				TEST_TARGET_NAME = "[mini#3] MemoApp";
 			};
 			name = Debug;
 		};
-		B33144DA2D6EFA8D009C178F /* Release */ = {
+		B353EF342D7037CF008BDF96 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -467,55 +520,55 @@
 				DEVELOPMENT_TEAM = 4F4VQHPY5W;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MenoAppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hakyung.-mini-3--MemoAppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "[mini#3] MenoApp";
+				TEST_TARGET_NAME = "[mini#3] MemoApp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B33144A22D6EFA8A009C178F /* Build configuration list for PBXProject "[mini#3] MenoApp" */ = {
+		B353EEFC2D7037CD008BDF96 /* Build configuration list for PBXProject "[mini#3] MemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B33144D32D6EFA8D009C178F /* Debug */,
-				B33144D42D6EFA8D009C178F /* Release */,
+				B353EF2D2D7037CF008BDF96 /* Debug */,
+				B353EF2E2D7037CF008BDF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B33144D02D6EFA8D009C178F /* Build configuration list for PBXNativeTarget "[mini#3] MenoApp" */ = {
+		B353EF2A2D7037CF008BDF96 /* Build configuration list for PBXNativeTarget "[mini#3] MemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B33144D12D6EFA8D009C178F /* Debug */,
-				B33144D22D6EFA8D009C178F /* Release */,
+				B353EF2B2D7037CF008BDF96 /* Debug */,
+				B353EF2C2D7037CF008BDF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B33144D52D6EFA8D009C178F /* Build configuration list for PBXNativeTarget "[mini#3] MenoAppTests" */ = {
+		B353EF2F2D7037CF008BDF96 /* Build configuration list for PBXNativeTarget "[mini#3] MemoAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B33144D62D6EFA8D009C178F /* Debug */,
-				B33144D72D6EFA8D009C178F /* Release */,
+				B353EF302D7037CF008BDF96 /* Debug */,
+				B353EF312D7037CF008BDF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B33144D82D6EFA8D009C178F /* Build configuration list for PBXNativeTarget "[mini#3] MenoAppUITests" */ = {
+		B353EF322D7037CF008BDF96 /* Build configuration list for PBXNativeTarget "[mini#3] MemoAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B33144D92D6EFA8D009C178F /* Debug */,
-				B33144DA2D6EFA8D009C178F /* Release */,
+				B353EF332D7037CF008BDF96 /* Debug */,
+				B353EF342D7037CF008BDF96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B331449F2D6EFA8A009C178F /* Project object */;
+	rootObject = B353EEF92D7037CD008BDF96 /* Project object */;
 }
