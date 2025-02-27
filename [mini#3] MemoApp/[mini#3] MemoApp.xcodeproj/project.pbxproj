@@ -48,16 +48,6 @@
 			path = "[mini#3] MemoApp";
 			sourceTree = "<group>";
 		};
-		B353EF1A2D7037CF008BDF96 /* [mini#3] MemoAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "[mini#3] MemoAppTests";
-			sourceTree = "<group>";
-		};
-		B353EF242D7037CF008BDF96 /* [mini#3] MemoAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "[mini#3] MemoAppUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				B353EF032D7037CD008BDF96 /* [mini#3] MemoApp */,
-				B353EF1A2D7037CF008BDF96 /* [mini#3] MemoAppTests */,
-				B353EF242D7037CF008BDF96 /* [mini#3] MemoAppUITests */,
 				B353EF022D7037CD008BDF96 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +131,6 @@
 			dependencies = (
 				B353EF192D7037CF008BDF96 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				B353EF1A2D7037CF008BDF96 /* [mini#3] MemoAppTests */,
-			);
 			name = "[mini#3] MemoAppTests";
 			packageProductDependencies = (
 			);
@@ -165,9 +150,6 @@
 			);
 			dependencies = (
 				B353EF232D7037CF008BDF96 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B353EF242D7037CF008BDF96 /* [mini#3] MemoAppUITests */,
 			);
 			name = "[mini#3] MemoAppUITests";
 			packageProductDependencies = (
@@ -294,7 +276,6 @@
 				INFOPLIST_FILE = "[mini#3] MemoApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +303,6 @@
 				INFOPLIST_FILE = "[mini#3] MemoApp/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
