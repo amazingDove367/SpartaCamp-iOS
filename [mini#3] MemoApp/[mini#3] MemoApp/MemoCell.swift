@@ -14,7 +14,7 @@ class MemoCell: UITableViewCell {
     private let memoLable: UILabel = {
         let lable = UILabel()
         lable.textColor = .label
-        lable.font = .systemFont(ofSize: 30, weight: .bold)
+        lable.font = .systemFont(ofSize: 15, weight: .bold)
         lable.translatesAutoresizingMaskIntoConstraints = false
         return lable
     }()
@@ -31,9 +31,14 @@ class MemoCell: UITableViewCell {
     private func configureAutoLayout() {
         // viewcontroll 와 같이 view 가 아님! -> contentView
         contentView.addSubview(memoLable)
+        memoLable.numberOfLines = 2
+        memoLable.lineBreakMode = .byTruncatingTail
+        
         NSLayoutConstraint.activate([
             memoLable.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            memoLable.widthAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.widthAnchor),
             memoLable.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            memoLable.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 20),
         ])
     }
     

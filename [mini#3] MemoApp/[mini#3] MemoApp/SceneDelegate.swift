@@ -19,9 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        let vc = MemoViewController()
         
-        window.rootViewController = vc
+        // main vc
+        let mainVC = MemoViewController()
+        // navigation controller embed 🔴
+        let naviVC = UINavigationController(rootViewController: mainVC)
+        
+        window.rootViewController = naviVC
         self.window = window
         window.makeKeyAndVisible()
     }
