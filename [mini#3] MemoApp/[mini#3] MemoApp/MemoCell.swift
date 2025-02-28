@@ -2,7 +2,7 @@
 //  MemoCell.swift
 //  [mini#3] MemoApp
 //
-//  Created by King Jesus on 2/27/25.
+//  Created by King J on 2/28/25.
 //
 
 import UIKit
