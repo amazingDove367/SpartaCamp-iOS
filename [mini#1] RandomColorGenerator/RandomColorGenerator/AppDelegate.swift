@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  RandomColorGenerator
 //
-//  Created by King Jesus on 2/18/25.
+//  Created by King J on 2/28/25.
 //
 
 import UIKit

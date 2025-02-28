@@ -48,16 +48,6 @@
 			path = RandomColorGenerator;
 			sourceTree = "<group>";
 		};
-		B33D3A842D646B7600DAE600 /* RandomColorGeneratorTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RandomColorGeneratorTests;
-			sourceTree = "<group>";
-		};
-		B33D3A8E2D646B7600DAE600 /* RandomColorGeneratorUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RandomColorGeneratorUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				B33D3A6D2D646B7400DAE600 /* RandomColorGenerator */,
-				B33D3A842D646B7600DAE600 /* RandomColorGeneratorTests */,
-				B33D3A8E2D646B7600DAE600 /* RandomColorGeneratorUITests */,
 				B33D3A6C2D646B7400DAE600 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +131,6 @@
 			dependencies = (
 				B33D3A832D646B7600DAE600 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				B33D3A842D646B7600DAE600 /* RandomColorGeneratorTests */,
-			);
 			name = RandomColorGeneratorTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +150,6 @@
 			);
 			dependencies = (
 				B33D3A8D2D646B7600DAE600 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B33D3A8E2D646B7600DAE600 /* RandomColorGeneratorUITests */,
 			);
 			name = RandomColorGeneratorUITests;
 			packageProductDependencies = (
