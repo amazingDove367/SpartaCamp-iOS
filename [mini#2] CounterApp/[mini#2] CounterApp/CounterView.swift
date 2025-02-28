@@ -2,7 +2,7 @@
 //  CounterView.swift
 //  [mini#2] CounterApp
 //
-//  Created by King Jesus on 2/26/25.
+//  Created by King J on 2/28/25.
 //
 
 import UIKit

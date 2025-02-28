@@ -48,16 +48,6 @@
 			path = "[mini#2] CounterApp";
 			sourceTree = "<group>";
 		};
-		B331447F2D6ED98E009C178F /* [mini#2] CounterAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "[mini#2] CounterAppTests";
-			sourceTree = "<group>";
-		};
-		B33144892D6ED98E009C178F /* [mini#2] CounterAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "[mini#2] CounterAppUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				B33144682D6ED98C009C178F /* [mini#2] CounterApp */,
-				B331447F2D6ED98E009C178F /* [mini#2] CounterAppTests */,
-				B33144892D6ED98E009C178F /* [mini#2] CounterAppUITests */,
 				B33144672D6ED98C009C178F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +131,6 @@
 			dependencies = (
 				B331447E2D6ED98E009C178F /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				B331447F2D6ED98E009C178F /* [mini#2] CounterAppTests */,
-			);
 			name = "[mini#2] CounterAppTests";
 			packageProductDependencies = (
 			);
@@ -165,9 +150,6 @@
 			);
 			dependencies = (
 				B33144882D6ED98E009C178F /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B33144892D6ED98E009C178F /* [mini#2] CounterAppUITests */,
 			);
 			name = "[mini#2] CounterAppUITests";
 			packageProductDependencies = (
