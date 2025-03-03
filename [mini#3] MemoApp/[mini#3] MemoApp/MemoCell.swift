@@ -14,7 +14,7 @@ class MemoCell: UITableViewCell {
     private let memoLable: UILabel = {
         let lable = UILabel()
         lable.textColor = .label
-        lable.font = .systemFont(ofSize: 15, weight: .bold)
+        lable.font = .systemFont(ofSize: 20, weight: .bold)
         lable.translatesAutoresizingMaskIntoConstraints = false
         return lable
     }()

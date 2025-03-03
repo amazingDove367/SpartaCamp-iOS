@@ -23,6 +23,23 @@ class MemoViewController: UIViewController {
         loadFromUserDefaults()
     }
     
+    func configureUI() {
+        tableView.backgroundColor = .orange
+    }
+    
+    func configureTableView() {
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false // In order to constraint a UIView (which UITableView is a subclass of)
+        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(MemoCell.self, forCellReuseIdentifier: MemoCell.identifier) // 🔴
+    }
+    
 }
 
 extension MemoViewController: UITableViewDataSource {
@@ -56,23 +73,6 @@ extension MemoViewController: UITableViewDelegate {
 }
 
 extension MemoViewController {
-    func configureUI() {
-        tableView.backgroundColor = .orange
-    }
-    
-    func configureTableView() {
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false // In order to constraint a UIView (which UITableView is a subclass of)
-        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(MemoCell.self, forCellReuseIdentifier: MemoCell.identifier) // 🔴
-    }
-    
     @objc func writeMemo() {
         let memoAlert = UIAlertController(title: "새로운 메모", message: "메모 내용을 입력하세요.", preferredStyle: .alert)
         memoAlert.addTextField()
