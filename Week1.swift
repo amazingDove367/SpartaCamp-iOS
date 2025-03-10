@@ -1,14 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>BaseFile</key>
-	<string>Chapters/Chapter1.playgroundchapter/Pages/Template.playgroundpage/main.swift</string>
-	<key>Diffs</key>
-	<array>
-		<dict>
-			<key>ModifiedContent</key>
-			<string>import UIKit
+
+import UIKit
 
 struct Movie {
     // stored property
@@ -39,10 +30,10 @@ struct Task {
     var progress: Int {
         didSet {
       
-            // sol.1 
+            // sol.1
             // 바로 찍기
             /*
-            var star = progress / 10 
+            var star = progress / 10
             for i in 1...star {
                 print("*", terminator: "")
             }
@@ -56,7 +47,7 @@ struct Task {
             // 저장해서 찍기
             var str = ""
             for i in 1...10 {
-                if progress &gt;= i * 10 {
+                if progress >= i * 10 {
                     str += "*"
                 } else {
                     str += "-"
@@ -88,14 +79,14 @@ struct Student {
     var major: String
     var knowledge: Double
     
-    func didFinalTest() -&gt; Int {
+    func didFinalTest() -> Int {
         let howMuchIdontKnow = (1 - knowledge) * 100
         let score = 100 - Int(howMuchIdontKnow)
         return score
     }
     
     mutating func didStudy() { // 공부할때마다 +0.1
-        if knowledge &gt;= 1 {
+        if knowledge >= 1 {
             knowledge = 1
         } else {
             knowledge += 0.1
@@ -156,7 +147,7 @@ struct SecondHandItem {
     lazy var history: Transactions = Transactions()
     // var history: Transactions = Transactions()
     
-    init(name: String) { 
+    init(name: String) {
         self.name = name
     }
 }
@@ -301,7 +292,7 @@ jake.checkClassMember()
 
 // protocol 상속
 protocol Payable {
-    func calculateWages() -&gt; Int
+    func calculateWages() -> Int
 }
 
 protocol Trainable {
@@ -313,7 +304,7 @@ protocol HasVacation {
 }
 
 extension Payable {
-    func calculateWages() -&gt; Int {
+    func calculateWages() -> Int {
         return 10_000_000
     }
 }
@@ -355,7 +346,7 @@ jade.takeVacation(days: 5)
 // extension
 // 기존 타입에 기능 추가
 extension Int {
-    func squared() -&gt; Int {
+    func squared() -> Int {
         return self * self
     }
 }
@@ -382,7 +373,7 @@ func buy(_ item: Purchaseable) {
 
 struct Book: Purchaseable {
     var name: String
-    var author: String    
+    var author: String
 }
 
 struct Movie2: Purchaseable {
@@ -498,11 +489,11 @@ var empyDic: [String:Int] = [:]
 empyDic = [String:Int]()
 
 // set
-var primes: Set&lt;Int&gt; = [2,3,5,7] // set 타입 설정해놓고는, []array와 같이 표현할 수 있음
-var evens = Set&lt;Int&gt;([2,4,6,8,2,4]) // type annotation 안하는 경우는 이렇게 길게 표현
+var primes: Set<Int> = [2,3,5,7] // set 타입 설정해놓고는, []array와 같이 표현할 수 있음
+var evens = Set<Int>([2,4,6,8,2,4]) // type annotation 안하는 경우는 이렇게 길게 표현
 print(evens)
-var emptySet: Set&lt;Int&gt; = []
-emptySet = Set&lt;Int&gt;() // 여기까지 하면 빈 깡통
+var emptySet: Set<Int> = []
+emptySet = Set<Int>() // 여기까지 하면 빈 깡통
 
 
 // optional unwrapping
@@ -524,7 +515,7 @@ if let unwrapped = age {
 func printAge(age: Int?) {
     guard let unwrapped = age else {
         print("age is missing")
-        return 
+        return
     }
     print("age: \(unwrapped)")
 }
@@ -538,7 +529,7 @@ let currentAge = age ?? 20 // age가 nil일 경우, 20
 print("age:: \(currentAge)")
 
 // optional chaining
-struct Developer { 
+struct Developer {
     var name: String
 }
 var jason2: Developer? = Developer(name: "Jason")// Developer옵셔널 타입. Developer라는 객체가 있을수도 없을수도 있다.
@@ -546,7 +537,7 @@ print(jason2?.name)
 
 
 // Typecasting
-// 부모 -&gt; 자식 type으로 변형 가능한지 확인할때
+// 부모 -> 자식 type으로 변형 가능한지 확인할때
 // as? 사용
 class Animal {}
 class Dog2: Animal {
@@ -562,16 +553,3 @@ for pet in pets {
         dog.bark()
     }
 }
-</string>
-			<key>ModifiedRange</key>
-			<string>{1, 9604}</string>
-			<key>OriginalContent</key>
-			<string></string>
-			<key>OriginalRange</key>
-			<string>{1, 0}</string>
-		</dict>
-	</array>
-	<key>FormatVersion</key>
-	<integer>2</integer>
-</dict>
-</plist>
