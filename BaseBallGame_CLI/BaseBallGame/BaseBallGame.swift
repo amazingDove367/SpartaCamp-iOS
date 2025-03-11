@@ -120,8 +120,8 @@ class BaseBallGame {
     func MakeAnswer() -> Int {
         while true {
             let random100 = Int.random(in: 1...9)
-            let random10 = Int.random(in: 1...9)
-            let random1 = Int.random(in: 1...9)
+            let random10 = Int.random(in: 0...9)
+            let random1 = Int.random(in: 0...9)
             
             if (random100 != random10) && (random10 != random1) && (random100 != random1) {
                 return (100 * random100) + (10 * random10) + (1 * random1)
