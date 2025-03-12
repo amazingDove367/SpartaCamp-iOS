@@ -96,5 +96,7 @@ iOSInjectionProject/
 **/xcshareddata/WorkspaceSettings.xcsettings
 
 ### Custom ###
-*.DS_Store
 .DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
