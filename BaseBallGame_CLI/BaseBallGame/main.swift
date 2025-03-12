@@ -8,4 +8,4 @@
 import Foundation
 
 let game = BaseBallGame()
-game.start()
+game.opening()

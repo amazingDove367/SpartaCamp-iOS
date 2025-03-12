@@ -9,7 +9,59 @@ import Foundation
 
 class BaseBallGame {
     
-    func start() {
+    /// Lv4. 5. 6 요구사항
+    /// 1). 프로그램을 시작할 때 안내문구
+    ///     ✅ 1. 게임 시작하기  2. 게임 기록 보기  3. 종료하기
+    /// 2). 1, 2, 3 이외의 입력값에 대해서는 오류 메시지
+    ///     올바른 숫자를 입력해주세요!
+    /// 3). 1. 게임 시작하기
+    ///     1. “필수 구현 기능” 의 예시처럼 게임이 진행
+    ///     2. 정답을 맞혀 게임이 종료된 경우
+    ///         >  다시 시작 문구
+    /// 4). 2. 게임 기록 보기
+    ///     1. 완료한 게임들에 대해 시도 횟수를 보여줍니다
+    ///         > 3. 종료하기 전까지 모두 저장 & 출력
+    /// 5). 3. 종료하기
+    ///     1. 이전의 게임 기록들 초기화
+
+
+
+    private let history = [Int]() // 게임 기록
+    
+    func opening() {
+        print("환영합니다! 원하시는 번호를 입력해주세요")
+        print("1. 게임 시작하기  2. 게임 기록 보기  3. 종료하기")
+        
+        while true {
+            
+            if let input = Int(readLine()!) {
+                
+                switch input {
+                case 1:
+                    // go to 게임 시작
+                    startGame()
+                    
+                    // 정답 > 기록 추가
+                    
+                    
+                case 2:
+                    // go to 게임 기록
+                case 3:
+                    // 지금까지 게임기록 다 삭제 & end
+                    // break
+                default:
+                    print("올바른 숫자를 입력해주세요!")
+                }
+                
+            } else {
+                print("올바른 숫자를 입력해주세요!")
+            }
+
+        }
+        
+    }
+    
+    func startGame() {
         print("< 게임을 시작합니다 >")
         
         // Make Random Answer
@@ -106,7 +158,7 @@ class BaseBallGame {
         }
     }
 
-    // MARK: Duplicate Number Check
+    // MARK: Check Duplicate Number
     /// 중복 숫자 체크
     func isDuplicateNumber(number: Int) -> Bool {
         let number100 = number / 100
