@@ -13,42 +13,43 @@ class BaseBallGame {
     /// 1). 프로그램을 시작할 때 안내문구
     ///     ✅ 1. 게임 시작하기  2. 게임 기록 보기  3. 종료하기
     /// 2). 1, 2, 3 이외의 입력값에 대해서는 오류 메시지
-    ///     올바른 숫자를 입력해주세요!
+    ///     ✅ 올바른 숫자를 입력해주세요!
     /// 3). 1. 게임 시작하기
-    ///     1. “필수 구현 기능” 의 예시처럼 게임이 진행
-    ///     2. 정답을 맞혀 게임이 종료된 경우
+    ///     ✅ 1. “필수 구현 기능” 의 예시처럼 게임이 진행
+    ///     ✅ 2. 정답을 맞혀 게임이 종료된 경우
     ///         >  다시 시작 문구
     /// 4). 2. 게임 기록 보기
-    ///     1. 완료한 게임들에 대해 시도 횟수를 보여줍니다
+    ///     ✅ 1. 완료한 게임들에 대해 시도 횟수를 보여줍니다
     ///         > 3. 종료하기 전까지 모두 저장 & 출력
     /// 5). 3. 종료하기
-    ///     1. 이전의 게임 기록들 초기화
+    ///     ✅ 1. 이전의 게임 기록들 초기화
 
 
 
-    private let history = [Int]() // 게임 기록
+    private var history = [Int]() // 게임 기록
+    private var playCounter = 0
     
     func opening() {
         print("환영합니다! 원하시는 번호를 입력해주세요")
-        print("1. 게임 시작하기  2. 게임 기록 보기  3. 종료하기")
         
-        while true {
+        var endGame = false
+        while !endGame {
+            print("1. 게임 시작하기  2. 게임 기록 보기  3. 종료하기")
             
             if let input = Int(readLine()!) {
                 
                 switch input {
                 case 1:
-                    // go to 게임 시작
                     startGame()
                     
-                    // 정답 > 기록 추가
-                    
-                    
                 case 2:
-                    // go to 게임 기록
+                    showPlayHistory()
+                    
                 case 3:
-                    // 지금까지 게임기록 다 삭제 & end
-                    // break
+                    endTheGame()
+                    endGame = true
+                    break
+                    
                 default:
                     print("올바른 숫자를 입력해주세요!")
                 }
@@ -56,13 +57,16 @@ class BaseBallGame {
             } else {
                 print("올바른 숫자를 입력해주세요!")
             }
-
+            
+            print()
         }
         
     }
     
     func startGame() {
-        print("< 게임을 시작합니다 >")
+        
+        print("\n< 게임을 시작합니다 >")
+        
         
         // Make Random Answer
         let answer = MakeAnswer()
@@ -73,13 +77,17 @@ class BaseBallGame {
             // Get & Check Input Value
             let input = readLine()
             if isRightInput(input) {
+                
+                playCounterUp()
                 if isAnswer(input: input!, answer: String(answer)) {
+                    // 정답 > 기록 추가
+                    updateHistory(playCounter: getPlayCounter())
                     break
                 } else {
                     continue
                 }
             } else {
-                print("올바르지 않은 입력값입니다")
+                print("올바르지 않은 입력값입니다\n")
                 continue
             }
         }
@@ -180,5 +188,37 @@ class BaseBallGame {
             }
         }
     }
+
+    func playCounterUp() {
+        self.playCounter += 1
+    }
     
+    func getPlayCounter() -> Int {
+        return self.playCounter
+    }
+    
+    func updateHistory(playCounter: Int) {
+        self.history.append(playCounter)
+        clearPlayCounter()
+    }
+    
+    func endTheGame() {
+        print("\n< 숫자 야구 게임을 종료합니다 >")
+    }
+    
+    func clearPlayCounter() {
+        self.playCounter = 0
+    }
+    
+    func showPlayHistory() {
+        print("\n< 게임 기록 보기 >")
+        
+        if self.history.count > 0 {
+            for i in 0...self.history.count - 1 {
+                print("\(i + 1)번째 게임 : 시도 횟수 - \(self.history[i])")
+            }
+        } else {
+            print("아직 게임 기록이 없습니다!")
+        }
+    }
 }
