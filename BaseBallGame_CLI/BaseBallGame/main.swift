@@ -7,5 +7,6 @@
 
 import Foundation
 
-let game = BaseBallGame()
-game.opening()
+// MARK: 프로그램 실행 진입점
+let game = GameView()
+game.selectMenu()
