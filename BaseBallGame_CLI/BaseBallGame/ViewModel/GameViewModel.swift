@@ -10,6 +10,7 @@ import Foundation
 class GameViewModel {
     
     private var player = Player.shared
+    private var hintVM = HintViewModel()
     
     // MARK: 1. 게임 시작
     func start() {
@@ -19,7 +20,7 @@ class GameViewModel {
         let answer = RandomAnswerGenerator.makeAnswer()
         
         while true {
-            InputHandler.requestInputUI()
+            InputHandler.requestInputAnswerUI()
             
             /// Input Validity 체크
             let input = readLine()
@@ -59,53 +60,13 @@ class GameViewModel {
         Menu.exitUI()
     }
     
+    // MARK: 4. 게임 규칙
+    func rules() {
+        Rules.show()
+    }
+    
+    // MARK: 정답 / 힌트 출력 로직
     func isAnswer(input: String, answer: String) -> Bool {
-        return hintGenerator(input: input, answer: answer)
+        return hintVM.hintGenerator(input: input, answer: answer)
     }
-    
-    // MARK: Generate Hint
-    /// Output 1. 스트라이크/볼
-    /// Output 2. Nothing
-    func hintGenerator(input: String, answer: String) -> Bool {
-        if input == answer {
-            print("정답입니다!\n")
-            return true
-            
-        } else {
-            var ball = 0
-            var strike = 0
-            
-            // Srike & Ball Checker
-            for (aswIdx, aswValue) in answer.enumerated() {
-                for (inputIdx, inputValue) in input.enumerated() {
-                    
-                    if aswIdx == inputIdx {
-                        if aswValue == inputValue {
-                            strike += 1
-                        }
-                    } else {
-                        if aswValue == inputValue {
-                            ball += 1
-                        }
-                    }
-                }
-            }
-            
-            // Hint
-            if strike == 0 && ball == 0 {
-                print("Nothing\n")
-                return false
-            } else if strike != 0 && ball == 0   {
-                print("\(strike)스트라이크\n")
-                return false
-            } else if strike == 0 {
-                print("\(ball)볼\n")
-                return false
-            } else {
-                print("\(strike)스트라이크 \(ball)볼\n")
-                return false
-            }
-        }
-    }
-    
 }

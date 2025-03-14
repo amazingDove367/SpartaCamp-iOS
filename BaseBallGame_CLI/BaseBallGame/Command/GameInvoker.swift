@@ -70,6 +70,12 @@ final class GameInvoker {
         print("< 게임을 종료 합니다 >")
     }
     
+    
+    /// 4. 게임 규칙
+    func rules() {
+        Rules.show()
+    }
+    
     /// 이전(상위) Menu로 이동
     func undo() {
         // 기능이 추가될 경우, 기능별로 업데이트

@@ -40,10 +40,14 @@ final class InputHandler {
         return (number100 != number10) && (number10 != number1) && (number100 != number1)
     }
     
+    // MARK: UI - Wrong Menu Input
+    static func requestInputMenuUI() {
+        print("메뉴 번호를 입력하세요 >> ", terminator: "")
+    }
     
-    // MARK: UI - Wrong Input
-    static func requestInputUI() {
-        print("숫자를 입력하세요")
+    // MARK: UI - Wrong Answer Input
+    static func requestInputAnswerUI() {
+        print("\(Constants.digitNumber)자리 숫자를 입력하세요 >> ", terminator: "")
     }
     
     

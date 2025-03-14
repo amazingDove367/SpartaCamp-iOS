@@ -16,16 +16,19 @@ final class MenuControl {
     private let startCommand: Commanding
     private let showHistoryCommand: Commanding
     private let exitCommand: Commanding
+    private let rulesCommand: Commanding
     private var commandHistory: [Commanding] = []
     
     init(
         start: Commanding,
         showHistory: Commanding,
-        exit: Commanding
+        exit: Commanding,
+        rules: Commanding
     ) {
         self.startCommand = start
         self.showHistoryCommand = showHistory
         self.exitCommand = exit
+        self.rulesCommand = rules
     }
     
     func start() {
@@ -41,6 +44,11 @@ final class MenuControl {
     func exit() {
         self.exitCommand.execute()
         self.commandHistory.append(self.exitCommand)
+    }
+    
+    func rules() {
+        self.rulesCommand.execute()
+        self.commandHistory.append(self.rulesCommand)
     }
     
     func undo() {
@@ -101,6 +109,23 @@ final class ExitCommand: Commanding {
     
     func execute() {
         receiver.exit()
+    }
+    
+    func undo() {
+        receiver.undo()
+    }
+}
+
+// MARK: Command 구체화 - RulesCommand
+final class RulesCommand: Commanding {
+    let receiver: GameInvoker
+    
+    init(receiver: GameInvoker) {
+        self.receiver = receiver
+    }
+    
+    func execute() {
+        receiver.rules()
     }
     
     func undo() {

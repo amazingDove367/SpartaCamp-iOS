@@ -35,6 +35,8 @@ class RandomAnswerGenerator {
                 for (idx, value) in array.reversed().enumerated() {
                     answer += (Int(pow(Float(10), Float(idx))) * value)
                 }
+                print(answer,
+                      " answer")
                 return answer
             }
         }

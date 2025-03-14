@@ -17,6 +17,7 @@ class GameView {
         
         while true {
             Menu.menuUI()
+            InputHandler.requestInputMenuUI()
             
             if let input = Int(readLine()!), let menu = Menu(rawValue: input) {
                 switch menu {
@@ -27,6 +28,8 @@ class GameView {
                 case .exit:
                     self.gameVM.exit()
                     return
+                case .rules:
+                    self.gameVM.rules()
                 }
             } else {
                 InputHandler.wrongInputUI()
