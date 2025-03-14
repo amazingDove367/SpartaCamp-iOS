@@ -62,6 +62,7 @@ BaseballGameCLI/
 │── README.md
 ```
 
+<br>
 
 ## 🛠 트러블슈팅 (Troubleshooting)
 
