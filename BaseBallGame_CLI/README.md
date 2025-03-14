@@ -85,3 +85,8 @@ BaseballGameCLI/
 - swift 에서 사용할 수 없는 `^` 연산자를 사용하여 값이 이상하게 나왔음
 - 해결 방법:  `^` 연산자 -> `pow()` 메소드로 변경
 - 디버깅 방법: `print()`를 활용하여 입력값과 검증 과정을 출력해보며 문제를 찾기
+
+<br>
+
+## vlog 회고
+https://hortenssiaa.tistory.com/82
