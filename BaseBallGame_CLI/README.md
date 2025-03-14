@@ -71,7 +71,7 @@ BaseballGameCLI/
 - **의심되는 원인**: `GameInvoker`에서 `GameViewModel`을 선언할 때 순환 참조가 발생하는 것 같음
 - **상태**: 미해결되어, Command Pattern 을 제외한 상태임
 - **시도한 해결 방법**:
-  1. `GameViewModel`의 `GameInvoker`를 `owned var`로 선언하거나
+  1. `GameViewModel`의 `GameInvoker`를 `unowned var`로 선언하거나
 
 ### 2. `Cannot use instance member 'gameInvoker' within property initializer` 오류 발생 (미해결)
 - **의심되는 원인**: 프로퍼티 초기화 시 `self`가 아직 생성되지 않았기 때문
