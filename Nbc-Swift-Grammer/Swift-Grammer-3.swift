@@ -258,6 +258,6 @@ let personC = PersonC(name: "Dive")
 personC.introduce()
 print(personC.walk())
 print("personC 발 갯수: \(personC.feetCount)")
-personC.feetCount = 10 // protocol property feetCount가 { get } 임에도, set 가능
+personC.feetCount = 10 // ⭐️⭐️ protocol property feetCount가 { get } 임에도, set 가능
 print("personC 발 갯수: \(personC.feetCount)")
 print("fullname&feetcount: \(personC.fullNameWithFeetCount)")
