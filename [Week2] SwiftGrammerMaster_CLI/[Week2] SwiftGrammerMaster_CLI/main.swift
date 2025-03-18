@@ -16,12 +16,12 @@ var sum: (Int, Int) -> String = { (v1: Int, v2: Int) in
 print(sum(4, 1000))
 
 // [1.2] 위에서 정의한 sum과 동일한 타입의 클로저를 파라미터로 받고, 반환 값이 없는(void) 함수 calculate를 작성해주세요.
-func calculate(closure: (Int, Int) -> String) {
-    print(closure(10, 23))
+func calculate(_ a: Int, _ b: Int, closure: (Int, Int) -> String) {
+    print(closure(a, b))
 }
 
-calculate { v1, v2 in
-    "두 수의 합은 \(v1 + v2) 입니다"
+calculate(10, 23) { a, b in
+    return "\(a + b)"
 }
 
 
