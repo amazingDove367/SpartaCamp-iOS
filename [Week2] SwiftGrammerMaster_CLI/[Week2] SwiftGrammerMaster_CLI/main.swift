@@ -32,3 +32,11 @@ let numbers = [1, 2, 3, 4, 5]
 var result = [String]()
 
 numbers.map { result.append(String($0)) }
+
+
+// [2.2] 주어진 입력값을 고차함수를 체이닝하여 주어진 출력값이 나오도록 구현해주세요.
+let intArr: Array<Int> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var strArr = intArr.filter { $0 % 2 == 0 }
+    .map { String($0) }
+
+print(strArr)
