@@ -9,7 +9,7 @@ import Foundation
 
 // 필수 문제 1
 // [1.1] 두 개의 Int 값을 파라미터로 받고, 하나의 String 값을 반환하는 클로저를 설계해주세요.
-var sum: (Int, Int) -> String = { (v1: Int, v2: Int) in
+var sum: (Int, Int) -> String = { v1, v2 in
     return "두 수의 합은 \(v1 + v2) 입니다"
 }
 
@@ -40,3 +40,4 @@ var strArr = intArr.filter { $0 % 2 == 0 }
     .map { String($0) }
 
 print(strArr)
+
