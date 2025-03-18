@@ -23,3 +23,12 @@ func calculate(closure: (Int, Int) -> String) {
 calculate { v1, v2 in
     "두 수의 합은 \(v1 + v2) 입니다"
 }
+
+
+// 필수 문제 2
+// [2.1] 아래 forEach 문을 map 을 사용하는 코드로 변환해주세요.
+let numbers = [1, 2, 3, 4, 5]
+
+var result = [String]()
+
+numbers.map { result.append(String($0)) }
