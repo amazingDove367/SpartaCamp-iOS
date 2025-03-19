@@ -7,10 +7,9 @@
 
 import Foundation
 
-// 필수 문제 2
+/// 필수 문제 2
 
-// [2.1] 아래 forEach 문을 map 을 사용하는 코드로 변환해주세요.
-
+/// [2.1] 아래 forEach 문을 map 을 사용하는 코드로 변환해주세요.
 func problem2_1() {
     let numbers = [1, 2, 3, 4, 5]
     
@@ -21,20 +20,18 @@ func problem2_1() {
 }
 
 
-// [2.2] 주어진 입력값을 고차함수를 체이닝하여 주어진 출력값이 나오도록 구현해주세요.
-
+/// [2.2] 주어진 입력값을 고차함수를 체이닝하여 주어진 출력값이 나오도록 구현해주세요.
 func problem2_2() {
     let intArr: Array<Int> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    var strArr = intArr.filter { $0 % 2 == 0 }
+    let strArr = intArr.filter { $0 % 2 == 0 }
         .map { String($0) }
     
     print(strArr)
 }
 
 
-// [2.3] 이제 고차함수를 직접 만들어 봅니다.
-
-func myMap(array: [Int], converter: (Int) -> String) -> [String] {
+/// [2.3] 이제 고차함수를 직접 만들어 봅니다.
+private func myMap(array: [Int], converter: (Int) -> String) -> [String] {
     return array.map { converter($0) }
 }
 
