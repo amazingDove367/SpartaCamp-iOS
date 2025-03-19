@@ -41,3 +41,15 @@ var strArr = intArr.filter { $0 % 2 == 0 }
 
 print(strArr)
 
+
+// [2.3] 이제 고차함수를 직접 만들어 봅니다.
+func myMap(array: [Int], converter: (Int) -> String) -> [String] {
+    return array.map { converter($0) }
+}
+
+let arr = myMap(array: [1, 2, 3, 4, 5]) {
+    String($0) // 원하는 고차함수 기능
+}
+print(arr)
+
+
