@@ -77,3 +77,34 @@ func runC() {
     print("\(strArray) -> \(c(strArray))")
 }
 
+
+
+/// [3.4] 함수 `c` 를 기반으로 수정하여 함수 `d` 를 작성해주세요.
+///     파라미터의 타입을 << 'Numeric 프로토콜'을 준수하는 타입의 요소를 가진 배열 >> 로 변경합니다.
+
+func d<T: Numeric>(_ array: [T]) -> [T] {
+
+    let evenArray = array.enumerated()
+        .filter { $0.offset.isMultiple(of: 2) }
+        .map { $0.element }
+    
+    checkNumericProtocol(evenArray)
+    
+    return evenArray
+}
+
+func runD() {
+    let intArray = [1, 2, 3, 4, 5]
+    print("\(intArray) -> \(d(intArray))")
+}
+
+/// checkNumericProtocol
+/// - 제네릭 T 가 프로토콜 Numeric 을 준수하는지 체크하는 함수
+func checkNumericProtocol<T>(_ array: [T]) {
+    
+    if array.allSatisfy({ $0 is (any Numeric) }) {
+        print("\(array) conforms to Numeric")
+    } else {
+        print("\(array) NOT conforms to Numeric")
+    }
+}
